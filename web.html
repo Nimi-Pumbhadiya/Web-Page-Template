@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="web.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body >
+    <!-- popupp-card  -->
+    <div class="container p-5 m-5 popupp" id="show">
+      <div class="row px-0 m-0">
+        <div class="col-6 text-end p-0">
+          <img
+            src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/newstter-moda_540x.jpg?v=1673343481"
+            alt=""
+          />
+        </div>
+        <div class="col-6 bg-white bg_white px-5">
+          <!-- <div class="close" onclick="closee()">
+            <i class="fa-solid fa-xmark"></i>
+          </div> -->
+          <div class="header pb-3">
+            <h4 class="fw-bold">NEWSLETTER</h4>
+          </div>
+          <div class="paragraph pb-3">
+            <p class="fw-lighter">
+              Get 15% off your first purchaxse! Plus, be the first to know about
+              sales, new product launches and exclusive offers!
+            </p>
+          </div>
+          <div class="user_input">
+            <h6 class="fw-bold pb-3">PRODUCT PREFERENCES:</h6>
+            <div class="d-flex align-items-center pb-3">
+              <input type="radio" name="a" id="" class="mx-2" />
+              <span class="fw-light">Men's</span>
+              <input type="radio" name="a" class="mx-2" />
+              <span class="fw-light">Women's</span>
+              <input type="radio" name="a" class="mx-2" />
+              <span class="fw-light">I Want It All</span>
+            </div>
+            <div class="email pb-2">
+              <input type="email" placeholder="ENTER YOUR EMAIL" />
+            </div>
+            <div class="btn1 text-center">
+              <h6 class="fw-bold text-white pt-3">SUBSCRIBE</h6>
+            </div>
+            <div class="bg_last d-flex align-items-center">
+              <input type="checkbox" class="me-3" />
+              <span> DON'T SHOW THIS POPUP AGAIN</span>
+            </div>
+          </div>
+        </div>
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+    <!-- automatic card  -->
+    <div class="popup_none">
+      <div class="d-flex animate" id="automatic-cards">
+        <div class="img">
+          <img
+            src="https://similux-vinovatheme.myshopify.com/cdn/shop/products/1_94067eef-ea28-4a6c-8b7b-18aa19f13389_80x.jpg?v=1658567289"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <span class="fw-light ms-2">Liam Purchased ! From Amsterdam </span>
+          <span class="rotate" id="closee"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+          <h6 class="pt-3 ms-2">
+            Black Bomber Jacket<i
+              class="fa-solid fa-eye text-secondary ms-2"
+            ></i>
+          </h6>
+          <ul class="d-flex p-0 mt-3 ms-2">
+            <li class="fw-light text-secondary">
+              <i class="fa-regular fa-clock me-2"></i> 2 minutes
+            </li>
+            <li class="text-success fw-light ms-3">
+              <i class="fa-regular fa-circle-check me-2"></i> Verified
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- scroll button :  -->
+    <div id="progresss" title="go to top">
+      <span id="progresss-value"><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+    <!-- Header 1 :  -->
+    <div class="container-fluid backgroundd_color p-2">
+      <div class="d-flex align-items-center">
+        <div class="col-4">
+          <div class="mediaa_icon">
+            <ul class="d-flex mb-0">
+              <li class="pe-3">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li class="pe-3">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="pe-3">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li class="pe-3">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li class="pe-3">
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="bg_textt">
+            <i class="fa-solid fa-bolt-lightning pe-2"></i
+            ><span class="fw-bold"
+              >FREE SHPPING ON ALL US ORDER OR ORDER ABOVE $200</span
+            >
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="d-flex justify-content-end">
+            <div class="bg_listt">
+              <ul class="mb-0 d-flex">
+                <li onclick="open1()">
+                  <a href="">USD<i class="fa-solid fa-caret-down ps-2"></i></a>
+                  <div class="child">
+                    <ul class="text-center ps-0">
+                      <li><a href="">USD</a></li>
+                      <li><a href="">EUR</a></li>
+                      <li><a href="">GBP</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li onclick="open2()">
+                  <a href=""
+                    >ENGLISH<i class="fa-solid fa-caret-down ps-2"></i
+                  ></a>
+                  <div class="child1">
+                    <ul class="ps-0 text-center">
+                      <li><a href="">ENGLISH</a></li>
+                      <li><a href="">FRANCAIS</a></li>
+                      <li><a href="">ESPANOL</a></li>
+                      <li><a href="">DEU</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- heder 2 : -->
+    <div class="container-fluid bg_fxd">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bgg_text py-5">
+          <div class="container-fluid">
+            <div
+              class="collapse navbar-collapse col-4 bgg_main"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="#">COLLECTION</a>
+                  <div class="bgg_mega px-5">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-3">
+                          <ul>
+                            <h6 class="bgg_header py-3">COLLECTION PAGE</h6>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection left sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection right sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <ul>
+                            <h6 class="bgg_header py-3">COLLECTION PAGE</h6>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection left sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection right sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <ul>
+                            <h6 class="bgg_header py-3">COLLECTION PAGE</h6>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection left sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection right sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <div class="img">
+                            <img
+                              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/menu_330x320.jpg?v=1667526228"
+                              class="m-4 rounded"
+                              width="90%"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="#">PRODUCTS</a>
+                  <div class="bgg_mega px-5">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-3">
+                          <ul>
+                            <h6 class="bgg_header py-3">COLLECTION PAGE</h6>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection left sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection right sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <ul>
+                            <h6 class="bgg_header py-3">COLLECTION PAGE</h6>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection left sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection right sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <ul>
+                            <h6 class="bgg_header py-3">COLLECTION PAGE</h6>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection left sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection right sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                            <li class="py-1">
+                              <a href="" class="fw-light"
+                                >Collection top sidebar</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <div class="img_slider">
+                            <h6 class="bgg_header">FEATURED PRODUCT</h6>
+                            <div
+                              id="carouselExampleInterval"
+                              class="carousel slide pb-3"
+                              data-bs-ride="carousel"
+                              style="width: 60%"
+                            >
+                              <div class="carousel-inner">
+                                <div
+                                  class="carousel-item active"
+                                  data-bs-interval="10000"
+                                >
+                                  <img
+                                    src="https://similux-vinovatheme.myshopify.com/cdn/shop/products/1_157ec421-ace1-417f-b096-8367f338718e_380x.jpg?v=1658804846"
+                                    class="d-block w-100"
+                                    alt="..."
+                                  />
+                                  <div class="information">
+                                    <div class="p-name">
+                                      <span
+                                        ><a href=""
+                                          >Hoodies coat for women</a
+                                        ></span
+                                      >
+                                    </div>
+                                    <div class="p-price">
+                                      <span><a href="">$27.00</a></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="carousel-item"
+                                  data-bs-interval="2000"
+                                >
+                                  <img
+                                    src="https://similux-vinovatheme.myshopify.com/cdn/shop/products/1_749df365-5b0d-4ed1-a181-c77aec251149_380x.jpg?v=1658566464"
+                                    class="d-block w-100"
+                                    alt="..."
+                                  />
+                                  <div class="information">
+                                    <div class="p-name">
+                                      <span
+                                        ><a href=""
+                                          >Hoodies coat for women</a
+                                        ></span
+                                      >
+                                    </div>
+                                    <div class="p-price">
+                                      <span><a href="">$27.00</a></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img
+                                    src="https://similux-vinovatheme.myshopify.com/cdn/shop/products/1_066d9152-8837-4f30-ae4d-583c3a1a95e7_380x.jpg?v=1658895315"
+                                    class="d-block w-100"
+                                    alt="..."
+                                  />
+                                  <div class="information">
+                                    <div class="p-name">
+                                      <span
+                                        ><a href=""
+                                          >Hoodies coat for women</a
+                                        ></span
+                                      >
+                                    </div>
+                                    <div class="p-price">
+                                      <span
+                                        ><a href=""
+                                          >$27.00 <del>$30.00</del></a
+                                        ></span
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                class="carousel-control-prev bg_effect"
+                                type="button"
+                                data-bs-target="#carouselExampleInterval"
+                                data-bs-slide="prev"
+                              >
+                                <span
+                                  class="carousel-control-prev-icon"
+                                  aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleInterval"
+                                data-bs-slide="next"
+                              >
+                                <span
+                                  class="carousel-control-next-icon"
+                                  aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link fw-bold"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    aria-expanded="false"
+                  >
+                    OTHER PAGES
+                  </a>
+                  <div class="bg_box">
+                    <ul>
+                      <li><a href="">404 erro</a></li>
+                      <li><a href="">about us</a></li>
+                      <li><a href="">contact us</a></li>
+                      <li><a href="">FAQs pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link fw-bold" href="#">BLOG</a>
+                  <div class="bg_box">
+                    <ul>
+                      <li><a href="">404 erro</a></li>
+                      <li><a href="">about us</a></li>
+                      <li><a href="">contact us</a></li>
+                      <li><a href="">FAQs pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                      <li><a href="">Size guide pages</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+              <div class="bg_logo">
+                <img
+                  src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/logo-moda-1.png?v=1672987427"
+                  alt=""
+                />
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="col-4 bg_bttn">
+              <ul class="d-flex justify-content-end">
+                <li>
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-regular fa-user"></i></a>
+                </li>
+                <li class="bg_perant">
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <span>0</span>
+                </li>
+                <li class="bg_perant">
+                  <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <span>0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- slider 1 : -->
+    <div class="container-fluid p-0" >
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg_sld">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/s-2-2_8f6f6c9c-4f6b-4587-874e-5781029eccef_2048x.jpg?v=1673401622"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block box2">
+              <h5>TOP TRANDS</h5>
+              <h2>BUSNESSMAN</h2>
+              <h1>SHOES</h1>
+              <p>Businessman stylish shoes collection</p>
+              <span>SHOP THE COLLECTION</span>
+            </div>
+          </div>
+          <div class="carousel-item bg_sld">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/s-2-3_d27a89cf-e796-40e1-a475-53db59f897c5_2048x.jpg?v=1673401623"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block box">
+              <h5>NEW ARRIVALS</h5>
+              <h2>STREET STYLE</h2>
+              <h1>FOR MEN</h1>
+              <p>In the city rhythm</p>
+              <span>SHOP THE COLLECTION</span>
+            </div>
+          </div>
+          <div class="carousel-item bg_sld">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/s-2-1_3b10ef68-da51-4320-9758-7f3d58ba0a15_2048x.jpg?v=1673401623"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block box3">
+              <h5>FASTION TRANDS</h5>
+              <h2>THE HOTLIST OF</h2>
+              <h1>AUTUMAN</h1>
+              <p>THE 12 BIGGEST SPRING/WINTER 2024 TRENDS</p>
+              <span>SHOP THE COLLECTION</span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- slider 2 : -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="bgg_slider">
+          <div class="slide-track">
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-5_828eae89-bf93-47c0-a438-dfe3a5fcd949_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-6_5e5b9f38-3df1-45c7-ba9d-e297227fba6a_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-1_3a09a6c8-fdd0-4515-b4db-e14cfa52286f_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-2_82a67575-14ca-448b-afe7-22c167ae3d81_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-1_3a09a6c8-fdd0-4515-b4db-e14cfa52286f_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-3_d30ccb4f-4a4f-44e8-81ee-4f2496c2e8d3_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-1_3a09a6c8-fdd0-4515-b4db-e14cfa52286f_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-2_82a67575-14ca-448b-afe7-22c167ae3d81_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-3_d30ccb4f-4a4f-44e8-81ee-4f2496c2e8d3_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-4_0940ffe0-b311-485d-84ce-11f5d1d48b84_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-5_828eae89-bf93-47c0-a438-dfe3a5fcd949_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-6_5e5b9f38-3df1-45c7-ba9d-e297227fba6a_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-1_3a09a6c8-fdd0-4515-b4db-e14cfa52286f_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+            <div class="slider">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/m-1_3a09a6c8-fdd0-4515-b4db-e14cfa52286f_150x.png?v=1673258119"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 images  : -->
+    <div class="container-fluid pb-5" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+      <div class="row">
+        <div class="col-4 bg_gallery">
+          <div class="lady_img">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/img-2-1_283fb2c0-f167-4cae-9ef7-ed0019502591_580x.jpg?v=1673410895"
+              class="w-100 d-block"
+              alt=""
+            />
+          </div>
+          <div class="lady_text">
+            <h4 class="text-white fw-bold">WOMEN COATS</h4>
+          </div>
+          <div class="lady_btn">
+            <h6><span>SHOP THE COLLECTION</span></h6>
+          </div>
+        </div>
+        <div class="col-4 bg_gallery">
+          <div class="lady_img">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/img-2-2_30c5ed47-06c5-4114-9b04-748ca5326ddc_580x.jpg?v=1673410895"
+              class="w-100 d-block"
+              alt=""
+            />
+          </div>
+          <div class="lady_text">
+            <h4 class="text-white fw-bold">MEN DENIM JACKETS</h4>
+          </div>
+          <div class="lady_btn">
+            <h6><span>SHOP THE COLLECTION</span></h6>
+          </div>
+        </div>
+        <div class="col-4 bg_gallery">
+          <div class="lady_img">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/img-2-3_2adf9b58-b546-47dc-b3da-8963f968cc99_580x.jpg?v=1673410895"
+              class="w-100 d-block"
+              alt=""
+            />
+          </div>
+          <div class="lady_text">
+            <h4 class="text-white fw-bold">WOMEN BOOTS</h4>
+          </div>
+          <div class="lady_btn">
+            <h6><span>SHOP THE COLLECTION</span></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery  -->
+    <div class="container-fluid bg_black" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+      <div class="hdr">
+        <h3>POPULAR CATEGORIES</h3>
+      </div>
+      <div class="bg_btns mt-4">
+        <span class="bg_btns1 fw-bold me-2"
+          ><a href="">Women Collections</a></span
+        >
+        <span class="bg_btns2 fw-bold ms-2"><a href="">Men Collection</a></span>
+      </div>
+      <div class="container-fluid bg_black1 mt-5 pt-5">
+        <div class="d-flex">
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-1_84f67428-79eb-4621-8d7b-ab0f4d7ab00d_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">Women Boots</a></h6>
+            </div>
+          </div>
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-2_15faff48-037f-4e7c-92ba-9e75f896fa0a_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">Danim Jacket</a></h6>
+            </div>
+          </div>
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-3_cd11089c-b5a5-472c-885b-39400f15b6bb_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">T-Shirt</a></h6>
+            </div>
+          </div>
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-4_d3a69b8e-6132-4cdc-89b9-f63550dda5d5_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">Hoodies</a></h6>
+            </div>
+          </div>
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-5_a66fdc95-761d-4c7a-a218-2d9e46eb450c_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">Women Coats</a></h6>
+            </div>
+          </div>
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-6_cb207cac-2ce2-49f2-91e7-36f2d690ff2d_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">Women Dresses</a></h6>
+            </div>
+          </div>
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-7_09a953de-6aa4-4734-b6e5-6d86a2bb0b75_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">cardigans</a></h6>
+            </div>
+          </div>
+          <div class="galley">
+            <div class="gallery_img">
+              <img
+                src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/c-8_2f095038-23a1-4cdd-ad72-2b3ca40e5aac_380x380_crop_center.png?v=1673423755"
+                alt=""
+              />
+            </div>
+            <div class="gallery_text">
+              <h6><a href="">Sweatpants</a></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bg_information -->
+    <div class="container-fluid bg_photoes mt-3 d-flex align-items-center" data-aos="zoom-in">
+      <div class="informationn">
+        <h1 class="py-3">Hand Knit Cardigan</h1>
+        <p class="fw-normal py-3">
+          This cardigan is a seamless design worked from the top down. It <br />
+          is divided at the underarms where the body and sleeves are <br />
+          worked separately
+        </p>
+        <span class="fw-bold py-3"><a href="">DISCOVER MORE</a></span>
+      </div>
+    </div>
+
+    <!-- 2 - images  -->
+    <div class="container-fluid px-0 py-2" data-aos="zoom-in">
+      <div class="d-flex">
+        <div class="col-6 bg_gallery pe-1">
+          <div class="lady_img mx-0">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/img-2-11_900x.jpg?v=1673511866"
+              class="w-100 d-block"
+              alt=""
+            />
+          </div>
+          <div class="lady_text">
+            <h4 class="text-white fw-bold">SOPE WOMEN'S</h4>
+          </div>
+          <div class="lady_btn">
+            <h6><span>SHOP NOW</span></h6>
+          </div>
+        </div>
+        <div class="col-6 bg_gallery ps-1">
+          <div class="lady_img">
+            <img
+              src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/img-2-12_900x.jpg?v=1673511866"
+              class="w-100 d-block"
+              alt=""+
+            />
+          </div>
+          <div class="lady_text">
+            <h4 class="text-white fw-bold">SOPE MEN'S</h4>
+          </div>
+          <div class="lady_btn">
+            <h6><span>SHOP NOW</span></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- video-slider  -->
+    <div class="container-fluid px-0 bg_video" data-aos="fade-up">
+      <video autoplay muted loop playsinline class="w-100 h-auto">
+        <source
+          src="https://cdn.shopify.com/videos/c/vp/6cc53332b4b44154a8627f168543433e/6cc53332b4b44154a8627f168543433e.HD-1080p-4.8Mbps-11661503.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="box4">
+        <h2>SECTION</h2>
+        <h1>VIDEO BANNER</h1>
+        <p>You can upload videos, customize text, buttons in this section</p>
+        <span>SHOP THE COLLECTION</span>
+      </div>
+    </div>
+
+    <!-- discription -->
+    <div class="container-fluid px-0 bg-light" data-aos="fade-up">
+      <div class="d-flex">
+        <div class="col-6 discription_img">
+          <img
+            src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/img-2-13_900x.jpg?v=1673582505"
+            class="w-100 d-block"
+            alt=""
+          />
+        </div>
+        <div class="col-6 bg_discription">
+          <span>PREMIUM DESIGNER SUITS FOR EVERY OCCASION</span>
+          <h1 class="mb-3 mt-2">Men Suits Collection</h1>
+          <p align="justify" class="mb-5">
+            Discover a range of high quality, on-trend men's suits that are
+            perfect for the office, as well as formal events such as weddings,
+            proms and special occasions. Ranging from black, grey and navy suits
+            that are ideal for work, to 3-piece wedding suits and tuxedos, our
+            collection ensures that you can dress to impress. Pair with our
+            range of quality shirts and ties, and add a waistcoat and formal
+            shoes for sartorial elegance.
+          </p>
+          <h6><a href="">SHOP THE COLLECTION</a></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid px-0 bg-light" data-aos="fade-up">
+      <div class="d-flex">
+        <div class="col-6 bg_discription2">
+          <span>WELCOME TO MODAMATE</span>
+          <h4 class="mb-3 mt-2">
+            Fashion's social & environmental responsibility.
+          </h4>
+          <p align="justify" class="mb-2">
+            Morbi et justo at enim rutrum molestie sit amet a purus. Quisque vel
+            justo et diam dapibus viverra id vitae ligula. Cras pharetra arcu
+            semper, interdum purus sed, molestie mauris. Phasellus gravida
+            molestie pulvinar. Pellentesque suscipit vulputate diam luctus
+            egestas.
+          </p>
+          <div class="py-4">
+            <ul class="p-0">
+              <li class="pb-3">
+                <i class="fa-solid fa-truck-fast me-3"></i>Free Shipping on
+                order over $200
+              </li>
+              <li class="pb-3">
+                <i class="fa-solid fa-gift me-3"></i>Earn Points & Get Rewards
+              </li>
+              <li class="pb-3">
+                <i class="fa-solid fa-phone-volume me-3"></i>Online Support 24
+                hours a day
+              </li>
+            </ul>
+          </div>
+          <span class="span_btn1"><a href="">CHACK OUT OUR FAQS</a></span>
+          <span class="span_btn2 ps-2"><a href="">STORE LOCATIONS</a></span>
+        </div>
+        <div class="col-6 discription_img">
+          <img
+            src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/img-2-14_900x.jpg?v=1673582495"
+            class="w-100 d-block"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- slider-3  -->
+    <div class="container-fluid py-5 mt-5 bg_title text-center" >
+      <h2>LET CUSTOMERS SPEAK FOR US</h2>
+      <h6>FROM 273 REVIEWS</h6>
+    </div>
+    <div class="container-fluid px-5" data-aos="fade-up">
+      <div class="container">
+        <div class="sldr1">
+          <div class="sldr2">
+            <div class="col-4 text-center bg_slider3 p-3">
+              <ul class="p-0 d-flex justify-content-center">
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+              </ul>
+              <h6 class="my-3">Fits him just right.</h6>
+              <p align="center">
+                Mut buen set de camisetas. La talla es exactamente la pedi.
+              </p>
+              <h4 class="mt-2">C.</h4>
+              <h5 class="">05/22/2023</h5>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0114/1863/2258/products/1_749df365-5b0d-4ed1-a181-c77aec251149_160x160.jpg?v=1665135541"
+                  alt=""
+                />
+              </div>
+              <span>T-Shirt Big Guy</span>
+            </div>
+            <div class="col-4 text-center bg_slider3 p-3">
+              <ul class="p-0 d-flex justify-content-center">
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+              </ul>
+              <h6 class="my-3">Fits him just right.</h6>
+              <p align="center">
+                I bought these sleep shirts after I kept stealing my husbands to
+                sleep in. I got extra large for comfort and these delivered.
+              </p>
+              <h4 class="mt-2">C.</h4>
+              <h5 class="">05/22/2023</h5>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0114/1863/2258/products/1_749df365-5b0d-4ed1-a181-c77aec251149_160x160.jpg?v=1665135541"
+                  alt=""
+                />
+              </div>
+              <span>T-Shirt Big Guy</span>
+            </div>
+            <div class="col-4 text-center bg_slider3 p-3">
+              <ul class="p-0 d-flex justify-content-center">
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+              </ul>
+              <h6 class="my-3">Fits him just right.</h6>
+              <p align="center">
+                Mut buen set de camisetas. La talla es exactamente la pedi.
+              </p>
+              <h4 class="mt-2">C.</h4>
+              <h5 class="">05/22/2023</h5>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0114/1863/2258/products/1_749df365-5b0d-4ed1-a181-c77aec251149_160x160.jpg?v=1665135541"
+                  alt=""
+                />
+              </div>
+              <span>T-Shirt Big Guy</span>
+            </div>
+            <div class="col-4 text-center bg_slider3 p-3">
+              <ul class="p-0 d-flex justify-content-center">
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+              </ul>
+              <h6 class="my-3">Fits him just right.</h6>
+              <p align="center">
+                Mut buen set de camisetas. La talla es exactamente la pedi.
+              </p>
+              <h4 class="mt-2">C.</h4>
+              <h5 class="">05/22/2023</h5>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0114/1863/2258/products/1_749df365-5b0d-4ed1-a181-c77aec251149_160x160.jpg?v=1665135541"
+                  alt=""
+                />
+              </div>
+              <span>T-Shirt Big Guy</span>
+            </div>
+            <div class="col-4 text-center bg_slider3 p-3">
+              <ul class="p-0 d-flex justify-content-center">
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+              </ul>
+              <h6 class="my-3">Fits him just right.</h6>
+              <p align="center">
+                I'm wide in the shoulders and long in the torso with athletic
+                build, sometimes hard to find a shirt that fits these areas well
+                without being too loose or big of a shirt. These fit the bill
+                very well, will certainly buy more.
+              </p>
+              <h4 class="mt-2">C.</h4>
+              <h5 class="">05/22/2023</h5>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0114/1863/2258/products/1_749df365-5b0d-4ed1-a181-c77aec251149_160x160.jpg?v=1665135541"
+                  alt=""
+                />
+              </div>
+              <span>T-Shirt Big Guy</span>
+            </div>
+            <div class="col-4 text-center bg_slider3 p-3">
+              <ul class="p-0 d-flex justify-content-center">
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+              </ul>
+              <h6 class="my-3">Fits him just right.</h6>
+              <p align="center">
+                I'm wide in the shoulders and long in the torso with athletic
+                build, sometimes hard to find a shirt that fits these areas well
+                without being too loose or big of a shirt. These fit the bill
+                very well, will certainly buy more.
+              </p>
+              <h4 class="mt-2">C.</h4>
+              <h5 class="">05/22/2023</h5>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0114/1863/2258/products/1_749df365-5b0d-4ed1-a181-c77aec251149_160x160.jpg?v=1665135541"
+                  alt=""
+                />
+              </div>
+              <span>T-Shirt Big Guy</span>
+            </div>
+            <div class="col-4 text-center bg_slider3 p-3">
+              <ul class="p-0 d-flex justify-content-center">
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+                <li><i class="fa-solid fa-star text-success"></i></li>
+              </ul>
+              <h6 class="my-3">Fits him just right.</h6>
+              <p align="center">
+                Mut buen set de camisetas. La talla es exactamente la pedi.
+              </p>
+              <h4 class="mt-2">C.</h4>
+              <h5 class="">05/22/2023</h5>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0114/1863/2258/products/1_749df365-5b0d-4ed1-a181-c77aec251149_160x160.jpg?v=1665135541"
+                  alt=""
+                />
+              </div>
+              <span>T-Shirt Big Guy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slider4 -->
+    <div class="container-fluid p-0 bg-light.bg-gradient" data-aos="fade-up">
+      <div class="d-flex">
+        <div class="col-3 slide_header ps-5">
+          <h5>Follow us On</h5>
+          <h5 class="m-0">Instagram</h5>
+          <br />
+          <span class="fw-lighter">@vinovatheme</span>
+          <p class="mt-3 mb-0 fw-lighter">Follow us: @modamate</p>
+          <p class="m-0 fw-lighter">Share your style: #modamatebstyle</p>
+          <p class="fw-lighter">Share your pup’s style: #modamate</p>
+        </div>
+        <div class="col-9">
+          <div class="slider-main">
+            <div class="slider-bar">
+              <div class="slider_imgg">
+                <img
+                  src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/md-img-1-6_600x600_crop_center.jpg?v=1673237356"
+                  alt=""
+                />
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="slider_imgg">
+                <img
+                  src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/md-img-1-7_600x600_crop_center.jpg?v=1673237356"
+                  alt=""
+                />
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="slider_imgg">
+                <img
+                  src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/md-img-1-8_600x600_crop_center.jpg?v=1673237356"
+                  alt=""
+                />
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="slider_imgg">
+                <img
+                  src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/md-img-1-9_600x600_crop_center.jpg?v=1673237356"
+                  alt=""
+                />
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="slider_imgg">
+                <img
+                  src="https://similux-vinovatheme.myshopify.com/cdn/shop/files/md-img-1-12_600x600_crop_center.jpg?v=1673237356"
+                  alt=""
+                />
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <div class="slider-control">
+              <div class="next">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="pre">
+                <i class="fa fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <div class="container-fluid bg_black text-white" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 footer_part1">
+              <h5 class="mb-4">CONTACT US</h5>
+              <ul class="p-0">
+                <li class="mb-3 fw-bold">
+                  <i class="fa-solid fa-phone-volume me-2"></i>We’re available
+                  by phone <span>+123-456-789</span>
+                </li>
+                <li class="mb-3 fw-light">
+                  <i class="fa-regular fa-envelope me-2"></i>info@example.com
+                </li>
+                <li class="mb-3 fw-lighter">
+                  <i class="fa-regular fa-clock me-2"></i>Monday till Friday 10
+                  to 6 EST
+                </li>
+              </ul>
+            </div>
+            <div class="col-5 footer_part2">
+              <h5 class="mb-4">NEWSLETTER</h5>
+              <p class="fw-lighter">
+                Get 15% off your first purchaxse! Plus, be the first to know
+                about sales new product launches and exclusive offers!
+              </p>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="ENTER YOUR EMAIL" />
+                <span>Subscribe</span>
+              </div>
+            </div>
+            <div class="col-3 footer_part3">
+              <h6 class="mb-3">CURRENCY</h6>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">USD</a></li>
+                  <li><a class="dropdown-item" href="#">EUR</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">BDP</a>
+                  </li>
+                </ul>
+                <h6 class="my-3">LANGUAGE</h6>
+              <div class="dropdown dropup">
+                <button
+                  class="btn btn-secondary dropdown-toggle btn-pad"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ENGLISH 
+                </button>
+                <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
+                  <li><a class=" d-pad dropdown-item " href="#">ENGLISH</a></li>
+                  <li><a class="d-pad dropdown-item " href="#">ESPANOL</a></li>
+                  <li>
+                    <a class=" d-pad dropdown-item " href="#">DEUTSCH</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer>
+      <div class="container-fluid bg_black text-white" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 footer_part4">
+              <h5 class="mb-3">HELP & SUPPORT</h5>
+              <ul class="p-0">
+                <li><a href="">Help Center</a></li>
+                <li><a href="">Shipping Info</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">How To Order</a></li>
+                <li><a href="">How To Track</a></li>
+                <li><a href="">Size Guide</a></li>
+              </ul>
+            </div>
+            <div class="col-5 footer_part4">
+              <h5 class="mb-3">COMPANY INFO</h5>
+              <ul class="p-0">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Our Blog</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Store Locations</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="col-3 footer_part4">
+              <h5 class="mb-3">CUSTOMER CARE</h5>
+              <ul class="p-0">
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Accessibility Statement</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Gift Card</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer>
+      <div class="container-fluid text-white f_bg border-top border-light text-center" >
+        <div class="container">
+                <span class="mb-5">Copyright <span>&copy;</span> 2023 Vinovathemes. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!-- js aos link  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="web.js"></script>
+</html>
